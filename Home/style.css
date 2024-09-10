@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+header{
+
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    background-color: rgb(0,96,57);
+
+}
+
+.container{
+
+    width: 1280px;
+    margin: auto;
+
+}
+
+.nav_checkbox{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 10px 0px;
+
+}
+.image1{
+    width: 40px;
+    left: 750px;
+    padding: 20px;
+
+}
+
+.menu{
+    
+    padding-left: 10px;
+    &:hover{
+        opacity: 0.4;
+        transition: ease-in-out 0.2s;
+    }
+
+}
+
+.tab-nav{
+
+    outline: none;
+    display: none;
+
+}
+
+.label{
+
+    display: none;
+    color: white;
+
+}
+
+.bar{
+
+    width: 25px;
+    height: 5px;
+    background-color: white;
+    margin-top: 5px;
+
+}
+
+.content_nav{
+
+    grid-column: 3;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+.content_nav li{
+
+    display: inline-block;
+    padding-right: 10px;
+    &:hover{
+        opacity: 0.4;
+        transition: ease-in-out 0.2s;
+    }
+
+}
+
+.content_nav li a{
+
+    text-decoration: none;
+    color: white;
+    position: relative;
+
+}
+
+
+@media screen and (max-width: 1280px){
+
+    .container{
+
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width: 770px){
+
+    .label{
+
+        display: grid;
+        cursor: pointer;
+        grid-column: 3;
+        padding-right: 10px;
+
+    }
+
+    .content_nav{
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/4;
+        text-align: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: all ease-in-out 0.6s;
+
+    }
+
+    .nav_checkbox input:checked ~ .content_nav{
+
+        max-height: 500px;
+
+    }
+
+    .content_nav li{
+
+        padding: 20px 0px;
+
+    }
+
+
+}
+.video1{
+    width: 100%;
+}
+.video2{
+    width: 100%;
+}
+
+:root {
+	--cards: 4;
+	--cardHeight: vh;
+	--cardTopPadding: 1.5em;
+	--cardMargin: 4vw;
+}
+
+.stack {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#cards {
+	list-style: none;
+	padding-left: 0;
+}
+
+#card1 {
+	--index: 1;
+}
+#card2 {
+	--index: 2;
+}
+#card3 {
+	--index: 3;
+}
+#card4 {
+	--index: 4;
+}
+
+.card {
+	position: sticky;
+    top:0;
+}
+.footer-logo{
+    width: 150px;
+    padding-top: 50px;
+}
+section{
+    padding: 80px 13% 70px;
+}
+.footer-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    gap: 0.5em;
+}
+.icons a{
+    margin-left: 15px;
+    display: inline-block;
+    color: black;
+    font-size: 20px;
+    &:hover{
+        color: rgb(0,96,57);
+        transform: translateY(-5px);
+        transition: 0.4s ease-in-out;
+    }
+
+
+}
+.footer-content li a{
+    display: block;
+    color: black;
+    &:hover{
+        color:rgb(0,96,57)
+    }
+}
+
+
+/* Drop down */
+/* Style The Dropdown Button */
+.dropbtn {
+    background-color: rgb(0,96,57);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(0,96,57);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(8, 123, 77)}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {
+    background-color:rgb(0,96,57);
+  }
